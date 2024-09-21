@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CRCE Bot</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: #ffffff;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #34495e;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #ecf0f1;
+        }
+
+        /* Main Content Styling */
+        .about-section {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 50px 10%;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .about-section:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+            color: #f5f5f5;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .team-member {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            width: 250px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ecf0f1;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #f5f5f5;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #34495e;
+            padding: 20px;
+            text-align: center;
+            color: #ecf0f1;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #4ca1af;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .team {
+                flex-direction: column;
+            }
+
+            .about-section {
+                margin: 30px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <!-- About Us Section -->
+    <div class="about-section">
+        <h2>Who We Are</h2>
+        <p>Welcome to CRCE Bot, your virtual assistant designed to provide you with quick and accurate information about our institution. 
+        Whether you're a student, faculty member, or visitor, we are here to help! Our goal is to simplify your access to important resources 
+        and make your experience at CRCE more efficient and enjoyable. Feel free to explore, ask questions, and learn more about what we offer.</p>
+    </div>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="team-member">
+            <img src="https://via.placeholder.com/120" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>Lead Developer</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/120" alt="Team Member 2">
+            <h3>Jane Smith</h3>
+            <p>UX/UI Designer</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/120" alt="Team Member 3">
+            <h3>David Lee</h3>
+            <p>Project Manager</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 CRCE Bot. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>

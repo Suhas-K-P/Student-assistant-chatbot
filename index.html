@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Asistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="chat-container">
+        <!-- Top Navigation -->
+        <div class="header">
+            <h2>Student Asistant</h2>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="faq.html">FAQ</a>
+                <a href="logout.html">Log Out</a>
+            </nav>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-window" id="chatWindow">
+            <div class="bot-message">
+                <p><center>Welcome to CRCE Bot! Please choose an option below:</center></p><br>
+                <ol id="number-section">
+                    <li>Student Section</li><br>
+                    <li>Faculty Section</li><br>
+                    <li>Parent Section</li><br>
+                    <li>Visitor Section</li><br>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Enter your option..." onkeydown="handleInput(event)">
+            <button id="sendBtn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>

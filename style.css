@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #2d3e50;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header h2 {
+    color: #fff;
+}
+
+nav a {
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.chat-window {
+    background: #34495e;
+    padding: 15px;
+    border-radius: 15px;
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.bot-message {
+    background: #8e44ad;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+    padding-left: 30px;
+}
+
+.user-message {
+    background: #3498db;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: right;
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* .input-area,#userInput,#sendBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d3e50;
+}
+
+#number-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.input-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust to space items evenly */
+    background-color: #2d3e50;
+    width: 100%; /* Ensure the area takes full width */
+}
+
+#userInput {
+    flex-grow: 1; /* Allows the input to grow and take available space */
+    margin-right: 10px; /* Add some space between the input and button */
+    padding: 0.75%;
+    margin-left: 1%;
+    border: #0073ff00 1px solid;
+    /* Add some padding for better appearance */
+}
+
+#sendBtn {
+    /* You can add styles for the button here if needed */
+    background-image: image();
+}

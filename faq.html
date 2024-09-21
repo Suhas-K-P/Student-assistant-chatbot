@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Info Dashboard</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-item" onclick="showContent('fees')">Fees Info</div>
+            <div class="sidebar-item" onclick="showContent('address')">Address</div>
+            <div class="sidebar-item" onclick="showContent('syllabus')">Syllabus</div>
+            <div class="sidebar-item" onclick="showContent('rules')">Rules</div>
+            <div class="sidebar-item" onclick="showContent('events')">Upcoming Events</div>
+            <div class="sidebar-item" onclick="showContent('scholarship')">Scholarship Details</div>
+            <div class="sidebar-item" onclick="showContent('other')">Other Info</div>
+        </div>
+
+        <!-- Content Display Area -->
+        <div class="content-area">
+            <div id="content-display">
+                <h2>Welcome!</h2>
+                <p>Select an option on the left to see more information.</p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="faq.js"></script>
+</html>
